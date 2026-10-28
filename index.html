@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Алексей Тимофеев — художник</title>
+<meta name="description" content="Алексей Тимофеев. Графика, карандаш, картины, аэрография, акварель.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Caveat:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<svg width="0" height="0" style="position:absolute"><filter id="rough"><feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter></svg>
+<header class="hero">
+  <p class="hand">альбом рисунков</p>
+  <h1>Алексей<br>Тимофеев</h1>
+  <svg class="stroke" viewBox="0 0 400 20"><path d="M5 12 C 80 2, 160 20, 240 9 S 360 6, 395 11" /></svg>
+  <p class="sub">Графика · Карандаш · Картины · Аэрография · Акварель</p>
+  <a href="#gallery" class="scroll">листать&nbsp;↓</a>
+</header>
+<nav id="tabs" class="tabs"></nav>
+<main id="gallery">
+  <div class="sec-head"><h2 id="secName"></h2><p id="secYears" class="hand"></p></div>
+  <div id="grid" class="grid"></div>
+</main>
+<section class="about" id="about">
+  <figure class="polaroid"><img src="img/artist.jpg" alt="Алексей Тимофеев" loading="lazy"><figcaption class="hand">Алексей Тимофеев</figcaption></figure>
+  <div>
+    <h2>О художнике</h2>
+    <p>Художник. Графика, карандаш, живопись, аэрография, акварель.</p>
+    <h3>Контакты</h3>
+    <ul class="contacts">
+      <li><span>✈</span><a href="https://t.me/bilarius" target="_blank" rel="noopener">@bilarius</a></li>
+      <li><span>✉</span><a href="mailto:bilariuss@yandex.ru">bilariuss@yandex.ru</a></li>
+      <li><span>☏</span><a href="tel:+79212013252">+7 921 201-32-52</a></li>
+    </ul>
+  </div>
+</section>
+<footer>© Алексей Тимофеев</footer>
+<div id="viewer" class="viewer" hidden>
+  <button class="v-close" aria-label="Закрыть">×</button>
+  <button class="v-prev" aria-label="Назад">‹</button>
+  <div class="v-stage" id="vstage"><img id="vimg" alt=""><div class="lens" id="lens"></div></div>
+  <button class="v-next" aria-label="Вперёд">›</button>
+  <div class="v-bar"><span id="vcap"></span><span class="v-tools"><button id="lensBtn" class="on">🔍 лупа</button><button data-z="2">×2</button><button data-z="3" class="on">×3</button><button data-z="5">×5</button></span></div>
+</div>
+<script src="data/works.js"></script>
+<script src="app.js"></script>
+</body></html>
